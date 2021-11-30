@@ -5,7 +5,7 @@ const axios = require('axios')
 async function rarbg(query, page = '1') {
     const ALLURLARRAY = [];
     var ALLTORRENT = [];
-    const url = "https://rargb.to/search/" + page + "/?search=" + query;
+    const url = "https://rarbgmirror.org/torrents.php?search=" + page + "&category%5B%5D=" + query;
     let html;
     try {
         html = await axios.get(url, headers = {
